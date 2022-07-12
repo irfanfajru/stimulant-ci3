@@ -4,7 +4,7 @@ class Login extends CI_Controller
     public function __construct()
     {
         parent::__construct();
-        $this->load->model('m_auth');
+        $this->load->model('m_users');
         $this->load->library('form_validation');
     }
     public function index()
@@ -22,7 +22,7 @@ class Login extends CI_Controller
             $this->form_validation->set_rules('username', 'Username', 'required');
             $this->form_validation->set_rules('password', 'Password', 'required');
             if ($this->form_validation->run() != false) {
-                $data = $this->m_auth->login($login['username'], $login['password']);
+                $data = $this->m_users->login($login['username'], $login['password']);
                 if ($data) {
                     $this->session->set_userdata('id', $data['id']);
                     $this->session->set_userdata('nama', $data['nama']);
