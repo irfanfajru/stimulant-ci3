@@ -14,22 +14,32 @@
         <h5>SISTEM INFORMASI MANAJEMEN GRUP KELAS DAN PRAKTIKUM ONLINE</h5>
         <hr>
         <!-- cards -->
-        <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
+        <div class="row row-cols-1 row-cols-md-4 g-4 mt-3">
             <div class="col">
-                <div class="card h-100 shadow-sm">
+                <a href="<?php echo site_url('/groupkelas'); ?>" class="card h-100 shadow-sm text-decoration-none text-black">
                     <img height='238' src="https://media.istockphoto.com/vectors/empty-school-class-room-vector-id950633894?b=1&k=20&m=950633894&s=612x612&w=0&h=jY0Zh3vMNBFr86Hk1bUf0PKu-MmaGydT_W4S21_kxTI=" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Grup Kelas</h5>
+                        <h5 class="card-title ">Grup Kelas</h5>
                         <p class="card-text">Manajemen Grup Kelas</p>
                     </div>
-                </div>
+                </a>
             </div>
             <div class="col">
-                <div class="card h-100 shadow-sm">
-                    <img height='238' src="https://img.freepik.com/free-vector/flat-laboratory-room-with-microscope_23-2148885022.jpg?w=2000" class="card-img-top" alt="...">
+                <a href="<?php echo site_url('/grouppraktikum'); ?>" class="card h-100 shadow-sm text-decoration-none text-black">
+                    <img height='238' src="https://previews.123rf.com/images/gmast3r/gmast3r1511/gmast3r151100177/47575685-device-data-share-laptop-phone-and-tablet-information-synchronize-vector-illustration.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Grup Praktikum</h5>
+                        <h5 class="card-title ">Grup Kelas</h5>
                         <p class="card-text">Manajemen Grup Praktikum</p>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <img height="238" src="https://previews.123rf.com/images/gmast3r/gmast3r1511/gmast3r151100177/47575685-device-data-share-laptop-phone-and-tablet-information-synchronize-vector-illustration.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Sinkronisasi Matakuliah</h5>
+                        <p class="card-text">Sinkronisasi matakuliah dengan SIMERU</p>
                     </div>
                 </div>
             </div>
@@ -37,7 +47,7 @@
                 <div class="card h-100 shadow-sm">
                     <img height="238" src="https://previews.123rf.com/images/gmast3r/gmast3r1511/gmast3r151100177/47575685-device-data-share-laptop-phone-and-tablet-information-synchronize-vector-illustration.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Sinkronisasi Matakuliah</h5>
+                        <h5 class="card-title">Sinkronisasi Dosen</h5>
                         <p class="card-text">Sinkronisasi matakuliah dengan SIMERU</p>
                     </div>
                 </div>
