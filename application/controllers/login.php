@@ -6,10 +6,13 @@ class Login extends CI_Controller
         parent::__construct();
         $this->load->model('m_users');
         $this->load->library('form_validation');
+        $this->load->helper('middleware_helper');
     }
     public function index()
     {
         if ($this->input->server('REQUEST_METHOD') === 'GET') {
+            // middleware
+            middleware_login();
             // get method
             $this->load->view('view_login');
         } elseif ($this->input->server('REQUEST_METHOD') === 'POST') {
@@ -28,9 +31,9 @@ class Login extends CI_Controller
                     $this->session->set_userdata('nama', $data['nama']);
                     $this->session->set_userdata('role', $data['role']);
                     if ($data['role'] == 1) {
-                        redirect('/dashboard');
+                        redirect('/admin/dashboard');
                     } else {
-                        redirect('home');
+                        redirect('/mhs');
                     }
                 } else {
                     $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert">Username atau Password salah!</div>');

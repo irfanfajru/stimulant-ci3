@@ -6,15 +6,13 @@ class Dashboard extends CI_Controller
         parent::__construct();
         $this->load->model('m_users');
         $this->load->library('form_validation');
-        // gate admin
-        if ($this->session->userdata['id'] == null || $this->session->userdata['role'] != 1) {
-            redirect('/');
-        }
+        $this->load->helper('middleware_helper');
+        middleware_admin();
     }
     public function index()
     {
-        $this->load->view('navbar_dashboard');
-        $this->load->view('view_dashboard');
+        $this->load->view('/Admin/navbar_dashboard');
+        $this->load->view('/Admin/view_dashboard');
     }
     // function logout
     public function logout()
