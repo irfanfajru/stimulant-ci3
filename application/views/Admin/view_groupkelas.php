@@ -18,7 +18,7 @@
         </div>
         <div class="mt-5 row row-cols-1 row-cols-md-6 text-center">
             <h4 class="d-inline me-2">Group kelas</h4>
-            <a href="#" class="d-inline text-white p-2 text-decoration-none" style="background-color:#002856">Tambah +</a>
+            <a href="<?= site_url('admin/groupkelas/tambahgroupkelas')?>" class="d-inline text-white p-2 text-decoration-none" style="background-color:#002856">Tambah +</a>
             <div></div>
             <input class="form-control w-25 d-inline" type="text" placeholder="cari disini ...">
             <button class="d-inline btn btn-primary border-0 w-" style="background-color:#002856">Cari</button>
@@ -32,8 +32,8 @@
                     </div>
                     <div class="card-body">
                         <h4 class="card-title ">Komputer Vision</h4>
+                        <a href="#" class="card-text text-primary">robbyfa.idwebtech.com/</a>
                         <p class="card-text">Kelas B - Robby firdauzy A,S.T., M.Cs.</p>
-                        <a href="#" class="btn btn-primary">Gabung Group</a>
                         <a href="#" class="btn btn-warning">edit</a>
                         <a href="#" class="btn btn-danger">delete</a>
                     </div>
@@ -47,8 +47,23 @@
                     </div>
                     <div class="card-body">
                         <h4 class="card-title ">Komputer Vision</h4>
+                        <a href="#" class="card-text text-primary">robbyfa.idwebtech.com/</a>
                         <p class="card-text">Kelas B - Robby firdauzy A,S.T., M.Cs.</p>
-                        <a href="#" class="btn btn-primary">Gabung Group</a>
+                        <a href="#" class="btn btn-warning">edit</a>
+                        <a href="#" class="btn btn-danger">delete</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 shadow-sm text-decoration-none text-black">
+                    <div style="background-color:#002856">
+                        <p class="text-center text-white">Semester</p>
+                        <h1 class="text-white text-center">6</h1>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title ">Komputer Vision</h4>
+                        <a href="#" class="card-text text-primary">robbyfa.idwebtech.com/</a>
+                        <p class="card-text">Kelas B - Robby firdauzy A,S.T., M.Cs.</p>
                         <a href="#" class="btn btn-warning">edit</a>
                         <a href="#" class="btn btn-danger">delete</a>
                     </div>
