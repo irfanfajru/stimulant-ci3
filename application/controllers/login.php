@@ -33,7 +33,7 @@ class Login extends CI_Controller
                     if ($data['role'] == 1) {
                         redirect('/admin/dashboard');
                     } else {
-                        redirect('/mhs');
+                        redirect('/mhs/home');
                     }
                 } else {
                     $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert">Username atau Password salah!</div>');

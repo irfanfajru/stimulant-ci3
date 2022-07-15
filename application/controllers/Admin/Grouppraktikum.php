@@ -46,7 +46,7 @@ class Grouppraktikum extends CI_Controller
                 'semester' => $this->input->post('semester'),
             );
             // set validation rules
-            $this->form_validation->set_rules('matkul', 'matkul', 'required|alpha');
+            $this->form_validation->set_rules('matkul', 'matkul', 'required');
             $this->form_validation->set_rules('slot', 'kelas', 'required');
             $this->form_validation->set_rules('dosen', 'dosen', 'required');
             $this->form_validation->set_rules('link', 'link', 'valid_url|required');
@@ -87,7 +87,7 @@ class Grouppraktikum extends CI_Controller
                 'semester' => $this->input->post('semester'),
             );
             // set validation rules
-            $this->form_validation->set_rules('matkul', 'matkul', 'required|alpha');
+            $this->form_validation->set_rules('matkul', 'matkul', 'required');
             $this->form_validation->set_rules('slot', 'slot', 'required');
             $this->form_validation->set_rules('dosen', 'dosen', 'required');
             $this->form_validation->set_rules('link', 'link', 'valid_url|required');

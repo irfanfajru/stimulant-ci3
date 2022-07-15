@@ -35,7 +35,7 @@ class Groupkelas extends CI_Controller
                 'semester' => $this->input->post('semester'),
             );
             // set validation rules
-            $this->form_validation->set_rules('matkul', 'matkul', 'required|alpha');
+            $this->form_validation->set_rules('matkul', 'matkul', 'required');
             $this->form_validation->set_rules('kelas', 'kelas', 'required|exact_length[1]|alpha');
             $this->form_validation->set_rules('dosen', 'dosen', 'required');
             $this->form_validation->set_rules('link', 'link', 'valid_url|required');
@@ -89,7 +89,7 @@ class Groupkelas extends CI_Controller
                 'semester' => $this->input->post('semester'),
             );
             // set validation rules
-            $this->form_validation->set_rules('matkul', 'matkul', 'required|alpha');
+            $this->form_validation->set_rules('matkul', 'matkul', 'required');
             $this->form_validation->set_rules('kelas', 'kelas', 'required|exact_length[1]|alpha');
             $this->form_validation->set_rules('dosen', 'dosen', 'required');
             $this->form_validation->set_rules('link', 'link', 'valid_url|required');

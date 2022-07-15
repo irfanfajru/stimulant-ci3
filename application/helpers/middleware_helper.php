@@ -8,7 +8,7 @@ function middleware_login()
         if ($_SESSION['role'] == 1) {
             return redirect('/admin/dashboard');
         }
-        return redirect('/mhs');
+        return redirect('/mhs/home');
     }
 }
 
