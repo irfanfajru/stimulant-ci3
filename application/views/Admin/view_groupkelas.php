@@ -20,8 +20,8 @@
             <h4 class="d-inline me-2">Group kelas</h4>
             <a href="<?= site_url('admin/groupkelas/add') ?>" class="d-inline text-white p-2 text-decoration-none" style="background-color:#002856">Tambah +</a>
             <div></div>
-            <input class="form-control w-25 d-inline" type="text" placeholder="cari disini ...">
-            <button class="d-inline btn btn-primary border-0 w-" style="background-color:#002856">Cari</button>
+            <input class="form-control w-25 d-inline searchbox-input" type="text" placeholder="cari disini ...">
+            <button class="d-inline btn btn-primary border-0 w-" onClick='buttonUp()' style="background-color:#002856">Cari</button>
         </div>
         <?= $this->session->flashdata('hapus'); ?>
         <div class="mb-4 row row-cols-1 row-cols-md-4 g-3 mt-5">
@@ -46,6 +46,21 @@
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script>
+        var buttonUp = () => {
+            const input = document.querySelector(".searchbox-input");
+            const cards = document.getElementsByClassName("card");
+            let filter = input.value
+            for (let i = 0; i < cards.length; i++) {
+                let title = cards[i].querySelector(".card-body");
+                if (title.innerText.indexOf(filter) > -1) {
+                    cards[i].classList.remove("d-none")
+                } else {
+                    cards[i].classList.add("d-none")
+                }
+            }
+        }
+    </script>
 </body>
 
 </html>
